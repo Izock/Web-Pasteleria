@@ -1,6 +1,7 @@
 /*NUEVO*/
-
-
+* {
+font-family: 'Montserrat', sans-serif;
+}
 html{
     height: 100%;
 }
@@ -84,7 +85,7 @@ body{
     display: flex;
     justify-content: space-around !important;
     list-style:none;
-    background: #5A2A2A;
+    background:#A0827D;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -103,7 +104,9 @@ body{
 
 .footer a{
     text-align: right;
-    color: #fff;
+    color:#C9C4B9;
+    margin-top: 16px;
+    
 }
 
 
@@ -256,7 +259,8 @@ input[name="slider-select-element"] {
     height:350px;
     margin-left: 15px;
   }
-  
+
+
   div.reset {
     clear: both;
   }
@@ -303,21 +307,24 @@ form{
 }
 
 form label{
-	width:72px;
-	font-weight:bold;
+	width:180px;
+    font-weight:bold;
+    font-size: 25px;
 }
 
 form input[type="text"],
 form input[type="email"]{
 	width:180px;
-	padding:3px 10px;
-	border:1px solid #fff;
+	padding:15px 460px;
+	border:2.5px solid #E1DCD3;
 	border-radius:3px;
 	background-color:#fff;
-	margin:8px 0;
+    text-align: left;
+    margin: 0;
 }
 
 form input[type="submit"]{
+    font-size: 25px;
 	padding:8px 16px;
 	margin-top:32px;
 	border:1px solid #985A5A;
@@ -341,5 +348,74 @@ textarea{
 	margin:8px 0;
 	/*resize: vertical | horizontal | none | both*/
 	resize:none;
-	display:block;
+	
 }
+
+form input[type="mensaje"]{
+    width:20px;
+	padding:60px 540px;
+	border:2.5px solid #E1DCD3;
+	border-radius:3px;
+	background-color:#fff;
+    text-align: center;
+    margin: 0;
+}
+
+div.recuadroabajo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 360px;
+    padding: 0px;
+    margin: 0px ;
+    height: 540px;
+    background-color:#FFFAF2;
+    color: #817A7A;
+    margin-bottom: 40px;
+    border-radius: 32px;
+    border: 1px solid #707070;
+    font-size: 15px;
+  }
+  
+  div.recuadroabajo img.arriba {
+    float: center;
+    margin: 0px;
+    width:360px;
+    height:330px;
+  }
+
+  .contenedor {
+    width: 95%;
+    max-width: 1200px; /** = 1200px; **/
+    margin: 0 auto;
+}
+
+
+div.recuadroabajos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 360px;
+    padding: 0px;
+    margin: 0px ;
+    height: 400px;
+    color: black;
+    margin-bottom: 40px;
+    border-radius: 32px;
+    font-size: 15px;
+  }
+  
+  div.recuadroabajos img.arribas {
+    float: center;
+    margin: 0px;
+    width:360px;
+    height:330px;
+  }
+
+  h2 {
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      background-color: #5A2A2A;
+      padding: 10px;
+  }
