@@ -178,9 +178,9 @@ input[name="slider-select-element"] {
     float: left;
 }
 
-#element1:checked ~ #slider-arrows label:nth-child(2):before,
-#element2:checked ~ #slider-arrows label:nth-child(3):before,
-#element3:checked ~ #slider-arrows label:nth-child(1):before {
+#element1:checked ~ #slider-arrows label:nth-child(2)::before,
+#element2:checked ~ #slider-arrows label:nth-child(3)::before,
+#element3:checked ~ #slider-arrows label:nth-child(1)::before {
     color: white  ;
     content: "\f054";
     font-family: FontAwesome;
@@ -191,9 +191,9 @@ input[name="slider-select-element"] {
     -moz-osx-font-smoothing: antialiased;
 }
 
-#element1:checked ~ #slider-arrows label:nth-child(3):before,
-#element2:checked ~ #slider-arrows label:nth-child(1):before,
-#element3:checked ~ #slider-arrows label:nth-child(2):before {
+#element1:checked ~ #slider-arrows label:nth-child(3)::before,
+#element2:checked ~ #slider-arrows label:nth-child(1)::before,
+#element3:checked ~ #slider-arrows label:nth-child(2)::before {
     color: white  ;
     content: "\f053";
     font-family: FontAwesome;
@@ -314,8 +314,8 @@ form label{
 
 form input[type="text"],
 form input[type="email"]{
-	width:180px;
-	padding:15px 460px;
+	width:/* 180px */100%;
+	padding:/* 15px 460px */10px;
 	border:2.5px solid #E1DCD3;
 	border-radius:3px;
 	background-color:#fff;
@@ -352,13 +352,15 @@ textarea{
 }
 
 form input[type="mensaje"]{
-    width:20px;
-	padding:60px 540px;
+
+    width:/* 180px */100%;
+	padding:/* 15px 460px */10px;
 	border:2.5px solid #E1DCD3;
 	border-radius:3px;
 	background-color:#fff;
-    text-align: center;
+    text-align: left;
     margin: 0;
+    height: 80px;
 }
 
 div.recuadroabajo {
@@ -418,4 +420,9 @@ div.recuadroabajos {
       text-align: center;
       background-color: #5A2A2A;
       padding: 10px;
+  }
+
+  textarea{
+    width:/* 180px */101.5%;
+	border:2.5px solid #E1DCD3;
   }
